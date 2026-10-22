@@ -30,7 +30,7 @@ Or you can click the download button <img src="images/download_button.png" width
 0:15-0:45 | **Lecture/Demonstration, RNAseq analysis** (legacy SUSHI)
 0:45-1:00 | break
 1:00-2:00 | **Hands-on practice, RNAseq** (legacy SUSHI, Exercises 1-4; Exercise 5 at home)
-2:00-2:20 | **Lecture/Demonstration, Omics-Studio and OMAKASE** (the next SUSHI, and automatic analysis proposals)
+2:00-2:20 | **Lecture/Demonstration, Omics-Studio and OMAKASE** (the next SUSHI, and automatic analysis proposals) [Slides](lecture_notes/omics_studio_omakase_2026.html)
 2:20-2:50 | **Hands-on practice, Omics-Studio and OMAKASE** (Exercises 6-7)
 2:50-3:00 | **Reproducible research, Wrap-up**
 
@@ -46,9 +46,43 @@ OMAKASE panel | `<OMAKASE_PANEL_URL>` | Exercise 7
 
 ## Hands-on projects
 
-**Name**  | ProjectID (legacy SUSHI) | Group (Exercise 7)
+Placeholder rows (2026-10-22): names, project IDs and groups will be filled in when the
+participant list is final.
+
+**Participant** | ProjectID (legacy SUSHI) | Group (Exercise 7)
 ----------|-----------|-----------
-`<to be filled>` | p10xx | `<A-E>`
+Participant 01 | p1001 | A
+Participant 02 | p1002 | A
+Participant 03 | p1003 | A
+Participant 04 | p1004 | A
+Participant 05 | p1005 | A
+Participant 06 | p1006 | A
+Participant 07 | p1007 | A
+Participant 08 | p1008 | B
+Participant 09 | p1009 | B
+Participant 10 | p1010 | B
+Participant 11 | p1011 | B
+Participant 12 | p1012 | B
+Participant 13 | p1013 | B
+Participant 14 | p1014 | B
+Participant 15 | p1015 | C
+Participant 16 | p1016 | C
+Participant 17 | p1017 | C
+Participant 18 | p1018 | C
+Participant 19 | p1019 | C
+Participant 20 | p1020 | C
+Participant 21 | p1021 | D
+Participant 22 | p1022 | D
+Participant 23 | p1023 | D
+Participant 24 | p1024 | D
+Participant 25 | p1025 | D
+Participant 26 | p1026 | D
+
+## Lecture slides
+
+* SUSHI and RNAseq (2025 version): [SUSHI_lecture_1_RNAseq_20251125.pdf](lecture_notes/SUSHI_lecture_1_RNAseq_20251125.pdf)
+* Omics-Studio and OMAKASE: [omics_studio_omakase_2026.html](lecture_notes/omics_studio_omakase_2026.html)
+  (download the file and open it in a web browser; → next slide, ↑ find a slide by a word)
 
 ## Hands-on practices
 
