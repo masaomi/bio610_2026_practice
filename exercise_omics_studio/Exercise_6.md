@@ -1,6 +1,6 @@
 # Exercise 6 - A tour of Omics-Studio
 - Author: FGCZ
-- Date: `<DATE>` 2026 (DRAFT, not tested yet)
+- Date: 28/10/2026 (DRAFT, not tested yet)
 
 **Omics-Studio** is the next version of SUSHI, now in internal testing at FGCZ. It runs the
 same SUSHI apps (FastQC, STAR, featureCounts, ...) on the same cluster. What is new is the

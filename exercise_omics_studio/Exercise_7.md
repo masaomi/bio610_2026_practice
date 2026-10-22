@@ -1,6 +1,6 @@
 # Exercise 7 - OMAKASE: propose, approve, run
 - Author: FGCZ
-- Date: `<DATE>` 2026 (DRAFT, not tested yet)
+- Date: 28/10/2026 (DRAFT, not tested yet)
 
 In Exercises 1-4 you started each app by hand, one after another: FastQC, then STAR, then
 featureCounts, then the differential expression test. **OMAKASE** is a prototype that does the

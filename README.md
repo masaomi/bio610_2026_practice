@@ -1,10 +1,10 @@
 ## Bio610, SUSHI and Omics-Studio Hands-on practice
 
-> **DRAFT (2026-10-22).** The date, the timetable, the server addresses and the project list
+> **DRAFT (2026-10-22).** The timetable inside the afternoon, the server addresses and the project list
 > are not final. Exercises 6 and 7 have not been tested yet: Omics-Studio and OMAKASE are
 > being deployed for the course this week. Values written as `<...>` will be filled in then.
 
-## `<DATE>`, 2026
+## 28 October 2026 (Wed), 14.00-17.00
 
 Masaomi Hatakeyama
 
@@ -26,15 +26,15 @@ Or you can click the download button <img src="images/download_button.png" width
 
 **Afternoon** | &nbsp;
 -------|-------
-0:00-0:15 | **Guidance, Introduction to SUSHI**
-0:15-0:45 | **Lecture/Demonstration, RNAseq analysis** (legacy SUSHI)
-0:45-1:00 | break
-1:00-2:00 | **Hands-on practice, RNAseq** (legacy SUSHI, Exercises 1-4; Exercise 5 at home)
-2:00-2:20 | **Lecture/Demonstration, Omics-Studio and OMAKASE** (the next SUSHI, and automatic analysis proposals) [Slides](lecture_notes/omics_studio_omakase_2026.html)
-2:20-2:50 | **Hands-on practice, Omics-Studio and OMAKASE** (Exercises 6-7)
-2:50-3:00 | **Reproducible research, Wrap-up**
+14.00-14.15 | **Guidance, Introduction to SUSHI**
+14.15-14.45 | **Lecture/Demonstration, RNAseq analysis** (legacy SUSHI)
+14.45-15.00 | break
+15.00-16.00 | **Hands-on practice, RNAseq** (legacy SUSHI, Exercises 1-4; Exercise 5 at home)
+16.00-16.20 | **Lecture/Demonstration, Omics-Studio and OMAKASE** (the next SUSHI, and automatic analysis proposals) [Slides](lecture_notes/omics_studio_omakase_2026.html)
+16.20-16.50 | **Hands-on practice, Omics-Studio and OMAKASE** (Exercises 6-7)
+16.50-17.00 | **Reproducible research, Wrap-up**
 
-The times are relative to the start of the session, because the slot is not fixed yet.
+The split of the afternoon may still change.
 
 ## Course servers
 
