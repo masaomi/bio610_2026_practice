@@ -1,60 +1,91 @@
 # Exercise 1 - ReadQC
 - Author: FGCZ
-- Date: 26/04/2024
+- Date: 26/04/2024, steps rewritten for Omics-Studio 25/10/2026
 
 Steps
-1. [Navigate to SUSHI Course Server](#1-navigate-to-sushi-course-server-httpsfgcz-course1bfabricorg)
-2. [Select your project ID](#2-enter-your-project-id-in-the-field-or-select-your-project-id-in-the-selection-box-eg-1001-1002--etc)
-3. [Select DataSets](#3-select-datasets-to-see-the-list-of-existing-datasets-under-this-sushi-project)
-4. [Check DataSet](#4-click-on-the-name-of-the-dataset-to-be-taken-to-that-dataset-page-on-sushi)
-5. [Confirm parameters](#5-keep-the-default-options-click-next)
-6. [Submit the job](#6-submit-the-job)
-7. [Return to the dataset main page](#7-return-to-the-dataset-main-page)
-8. [Navigate to the FastQC dataset](#8-navigate-to-the-fastqc-dataset)
-9. [Explore the FastQC and MultiQC reports](#9-explore-the-fastqc-and-multiqc-reports)
+1. [Open the course Omics-Studio](#1-open-the-course-omics-studio)
+2. [Select your project](#2-select-your-project)
+3. [Select DataSets](#3-select-datasets)
+4. [Check the dataset](#4-check-the-dataset)
+5. [Select FastqcApp](#5-select-fastqcapp)
+6. [Keep the default parameters](#6-keep-the-default-parameters)
+7. [Submit the job](#7-submit-the-job)
+8. [Check the job status](#8-check-the-job-status)
+9. [Open the FastQC dataset](#9-open-the-fastqc-dataset)
 10. [Questions](#10-questions)
 
 ----
 
-### 1. Navigate to SUSHI Course Server: https://fgcz-course1.bfabric.org
+### 1. Open the course Omics-Studio
 
-### 2. Enter your project ID in the field, or select your project ID in the selection box, *e.g.*, 1001, 1002 ..., *etc*.
+https://fgcz-course2.bfabric.org
 
-<img src="screenshots/screenshot1.png" width="70%">
+No sign-in: the course copy is open to everybody in the course. The header says **Course**.
 
-### 3. Select "DataSets" to see the list of existing datasets under this SUSHI project 
+<img src="screenshots/omics_studio/os01_open.png" width="70%">
 
-There should be two datasets, one for bulk RNA and another for variant calling
+### 2. Select your project
 
-<img src="screenshots/screenshot2.png" width="70%">
+Open **Projects** in the header and pick your project, or type its number into the **Project #...** box.
+Your project number is in the table on the [course page](../README.md#hands-on-projects) (p1101, p1102, ...).
+Each participant has a project of their own: work only in yours.
 
-### 4. Click on the name of the dataset to be taken to that dataset page on SUSHI 
+### 3. Select DataSets
 
-See the list of apps available for this dataset, select `FastqcApp`
+Click **DataSets** in the header. Your project holds one dataset, `NextSeq500_20190507_NS278_o5638_subSampled`:
+RNA-seq of human cells, 6 samples, cut down to 100 000 reads a sample so that the jobs finish during the course.
 
-<img src="screenshots/screenshot3.png" width="70%">
+<img src="screenshots/omics_studio/os02_datasets.png" width="70%">
 
-### 5. Keep the default options, click "Next" 
+### 4. Check the dataset
 
-<img src="screenshots/screenshot4.png" width="50%">
+Click the name of the dataset. **Dataset Information** describes it; the sample table lists the 6 samples.
+The column `Condition [Factor]` gives the groups: 3 `undiff` and 3 `diff`.
 
-### 6. Submit the job 
+<img src="screenshots/omics_studio/os03_samples.png" width="70%">
 
-<img src="screenshots/screenshot5.png" width="70%">
+### 5. Select FastqcApp
 
-### 7. Return to the dataset main page
+**Runnable Applications** lists the apps that can read this dataset, grouped by category.
+Select `FastqcApp` in the **QC** row.
 
-Wait... Or maybe take a peek at the `jobs` screen? 
+<img src="screenshots/omics_studio/os04_apps.png" width="70%">
 
-### 8. Navigate to the FastQC dataset 
+### 6. Keep the default parameters
 
-<img src="screenshots/screenshot6.png" width="70%">
+The parameters come in a few pages. Keep the defaults, click **Next →** to the last page, then
+**Continue to Review →**.
 
-### 9. Explore the FastQC and MultiQC reports 
+<img src="screenshots/omics_studio/os05_fastqc_form.png" width="50%">
 
-<img src="screenshots/screenshot7.png" width="70%">
+### 7. Submit the job
 
-### 10. Questions 
+**Confirm Job Submission** shows the name of the result dataset and the parameters. Click **Confirm & Submit Job**.
+
+<img src="screenshots/omics_studio/os06_fastqc_confirm.png" width="70%">
+
+### 8. Check the job status
+
+Click **Jobs** in the header. The status moves from `SUBMITTED` / `PENDING` (waiting for a free node) to
+`RUNNING` and `COMPLETED`. The page asks again every 15 seconds by itself; please do not submit the same job twice.
+If it says `FAILED`, open the job and read its log.
+
+<img src="screenshots/omics_studio/os07_jobs.png" width="70%">
+
+Open a job to see the script that ran (**Script Content**) and what it printed (**Execution Log**).
+Both are kept after the job has finished.
+
+<img src="screenshots/omics_studio/os08_job_script.png" width="45%"> <img src="screenshots/omics_studio/os09_job_log.png" width="45%">
+
+### 9. Open the FastQC dataset
+
+Back in **DataSets**, a new dataset `Fastqc` has appeared under your RNA-seq dataset: the input is the parent,
+the result is the child. Open it. **MultiQC Report** shows all samples together; the per-sample FastQC reports
+and every other file are in **Data Folder**.
+
+<img src="screenshots/omics_studio/os10_fastqc_result.png" width="70%">
+
+<img src="screenshots/omics_studio/os11_gstore.png" width="70%">
 
 ### 10. Questions
 

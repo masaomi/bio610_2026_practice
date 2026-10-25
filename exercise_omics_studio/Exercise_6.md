@@ -1,109 +1,122 @@
-# Exercise 6 - A tour of Omics-Studio
+# Exercise 6 - OMAKASE: propose, approve, run
 - Author: FGCZ
-- Date: 28/10/2026 (DRAFT, not tested yet)
+- Date: 28/10/2026 (DRAFT: the automatic recipe choice is being added; the recipe list in step 3 may still change)
 
-**Omics-Studio** is the next version of SUSHI, now in internal testing at FGCZ. It runs the
-same SUSHI apps (FastQC, STAR, featureCounts, ...) on the same cluster. What is new is the
-web page you see and a programming interface (an API), so that scripts and other programs
-can use SUSHI too. Exercise 7 uses that interface.
+In Exercises 1-4 you started each app by hand, one after another: FastQC, then STAR, then
+featureCounts, then CountQC. **OMAKASE** is a prototype that does this for you. It **proposes**
+a chain of existing apps (a **recipe**). A person reads the proposal and **approves** it. Then
+OMAKASE **runs** the whole chain to the end, or stops and says why.
+
+OMAKASE = **O**mics **M**etadata **A**utomated **K**nowledge-based **A**nalysis
+**S**uggestion & **E**xecution (the name is provisional). Its rule:
+
+> **Rules decide, AI assists, humans release.**
+
+The chain it runs in this exercise is Exercises 1-3 in one go:
 
 ```
- legacy SUSHI web page ─┐
-                        ├─▶ SUSHI apps ─▶ job manager ─▶ cluster (SLURM) ─▶ result files (gStore)
- Omics-Studio web page ─┤
- OMAKASE, scripts ──────┘  (through the Omics-Studio API)
+ FastQC ┐ start together
+ STAR   ┘ ──▶ featureCounts ──▶ CountQC
+          (waits for STAR only)  (waits for featureCounts)
 ```
 
-In this exercise you look around Omics-Studio and compare it with the SUSHI pages you used in
-Exercises 1-4. You do **not** submit a job here unless your instructor asks you to.
+The reference genome is written in the recipe: the same one you chose in Exercise 2
+(GRCh38.p13, GENCODE Release 37).
+
+Work in **your own project** (the same one as in Exercises 1-4). Each dataset can be proposed
+**only once** per recipe: that stops the same analysis being started twice by mistake. So
+everyone makes one proposal, in their own project.
 
 Steps
-1. [Open Omics-Studio and sign in](#1-open-omics-studio-and-sign-in)
-2. [Select the project](#2-select-the-project)
-3. [Open the dataset list](#3-open-the-dataset-list)
-4. [Open the RNA-seq dataset](#4-open-the-rna-seq-dataset)
-5. [Look at an app's parameter form](#5-look-at-an-apps-parameter-form)
-6. [Open the job list, a job script and a job log](#6-open-the-job-list-a-job-script-and-a-job-log)
-7. [Questions](#7-questions)
+1. [Open OMAKASE](#1-open-omakase)
+2. [Choose your project and dataset](#2-choose-your-project-and-dataset)
+3. [Propose](#3-propose)
+4. [Read the proposal](#4-read-the-proposal)
+5. [Approve](#5-approve)
+6. [Run the chain](#6-run-the-chain)
+7. [Watch it in Omics-Studio](#7-watch-it-in-omics-studio)
+8. [Questions](#8-questions)
 
 ----
 
-### 1. Open Omics-Studio and sign in
+### 1. Open OMAKASE
 
-Open `<OMICS_STUDIO_URL>`. Choose one of the two ways to sign in:
+In the course Omics-Studio, click **OMAKASE** in the header. The panel opens in a new tab.
+No sign-in, as in Omics-Studio.
 
-- **Sign in with B-Fabric.** A short code appears. The link opens B-Fabric with the code
-  already filled in, and you approve there. Your password is typed only at B-Fabric; it never
-  reaches Omics-Studio.
-- **User name and password** (`<LOGIN_METHOD_FOR_STUDENTS>`).
+### 2. Choose your project and dataset
 
-At B-Fabric there is a box **"allow job submission"**. Leave it **unticked** for this
-exercise. Without it you can read everything, but a job submission is refused with
-`403 insufficient_scope`. That refusal is the permission check working, not an error.
+Under **Start from a course dataset**, choose your project (p1101, p1102, ...). Then choose the
+dataset `NextSeq500_20190507_NS278_o5638_subSampled`.
 
-`[screenshot TODO: sign-in page]`
+### 3. Propose
 
-### 2. Select the project
+In the recipe list, keep `auto_recipe`: OMAKASE chooses the recipe for this dataset. Press
+**Propose**.
 
-Choose project `<OS_PROJECT>` from the drop-down at the top, or type its number.
+**Propose** makes a proposal only. Nothing runs until someone types their name, presses
+**Approve**, then **Run**.
 
-`[screenshot TODO: project drop-down]`
+If the panel says the proposal `already exists`, someone has already proposed this dataset:
+check that you chose your own project.
 
-### 3. Open the dataset list
+### 4. Read the proposal
 
-Click **DataSets**. You should see the RNA-seq dataset `<OS_DATASET_NAME>` (mouse, 3 samples),
-and also the datasets that OMAKASE produced from it. Their names start with `omakase_`
-(Exercise 7 explains them).
+The proposal appears under **Proposals awaiting a decision**, with a number (the *candidate*
+number). Note it. Read:
 
-`[screenshot TODO: dataset list]`
+- the steps, and which step waits for which;
+- the parameters of each step;
+- the **reference genome**.
 
-### 4. Open the RNA-seq dataset
+Nothing has been submitted to the cluster yet.
 
-Click the dataset name. You see the sample table and, below it, the apps that can run on this
-dataset, grouped by category.
+### 5. Approve
 
-Find the column **Species** in the sample table and note its value. You will need it in
-Exercise 7.
+Is this proposal right for this dataset? If yes, type **your name** in the name box and press
+**Approve**. The name is recorded as the person who released the chain.
 
-`[screenshot TODO: dataset page with Species column and app list]`
+### 6. Run the chain
 
-### 5. Look at an app's parameter form
+Press **Run**. The chain takes about 9 minutes when the cluster is free (in a test run: FastQC
+5.5 min and STAR 3.5 min side by side, then featureCounts 1.5 min, then CountQC 2 min). It
+takes longer when the whole class runs at once.
 
-Click **FastqcApp**. The parameter form is generated from the app itself, just as in legacy
-SUSHI (Exercise 1, step 5). Read it, then go **back** without submitting.
+### 7. Watch it in Omics-Studio
 
-`[screenshot TODO: FastQC parameter form]`
+While it runs, open the **Jobs** page of your project in Omics-Studio. Watch which jobs start
+first and which one waits.
 
-### 6. Open the job list, a job script and a job log
+When the panel shows the chain as done, open **DataSets**. There is one new dataset per step,
+named `omakase_c<candidate>_s<step>_<App>`, for example `omakase_c3_s3_FeatureCountsApp`. They
+sit in the same tree as your results from Exercises 1-3: compare them.
 
-Click **Jobs** for the project. Each row is one job on the cluster: its ID, status, user,
-start and end time.
+### 8. Questions
 
-Pick a job that is `COMPLETED` and open:
+- **Question 1 (step 3)**: You did not pick the recipe; OMAKASE did, by a rule. At FGCZ,
+  choosing the most common chain from past orders of the same kind would have been right for
+  only about one order in five (~20 %). Why does OMAKASE still ask a person before anything runs?
 
-- its **script**: the exact command that ran on the cluster;
-- its **log**: what the program printed while it ran;
-- its **dataset**: the result it produced.
+- **Question 2 (step 4)**: Which reference genome is in the proposal? Is it the one you chose
+  in Exercise 2? Why does that matter when you compare the two results?
 
-`[screenshot TODO: job list, script, log]`
+- **Question 3 (step 7)**: Which jobs started at the same time? Why does featureCounts wait for
+  STAR but not for FastQC?
 
-### 7. Questions
+- **Question 4 (step 5)**: Where can you see who approved the chain? In this course nobody signs
+  in, so the name is whatever was typed. What does that mean for the record?
 
-- **Question 1**: Compare the app list in step 4 with the list you saw in legacy SUSHI
-  (Exercise 1, step 4). Are the same apps offered for an RNA-seq dataset?
+- **Question 5**: If STAR had failed, what should happen to featureCounts? (Hint: think about
+  what featureCounts needs as input.)
 
-- **Question 2**: Open a job script (step 6). Can you find the app, the input dataset and the
-  reference genome it used? Why is it useful that this script is kept after the job ends?
+- **Question 6**: The recipe stops at CountQC. There is no differential expression step like
+  Exercise 4. In Exercise 4, which choice did you have to make yourself? Why is that choice hard
+  to automate?
 
-- **Question 3**: What is the value of **Species** for this dataset (step 4)? Guess what a
-  program could do with this value before it runs STAR.
+- **Question 7**: Compare Exercises 1-3 (you started each app) with this exercise (a recipe and
+  a recorded approval). What does each way record about **how** the result was made?
 
-- **Question 4**: Legacy SUSHI and Omics-Studio run the same apps. What can you do with a
-  programming interface (API) that is hard to do by clicking on a web page?
+### If the panel is not available
 
-### Optional (only if your instructor says so)
-
-Sign in again with **"allow job submission"** ticked, then submit FastqcApp on the RNA-seq
-dataset from Omics-Studio. Compare the steps with Exercise 1.
-
-Next: [Exercise7 OMAKASE: propose, approve, run](Exercise_7.md)
+Your instructor runs steps 2-6 on the screen in the instructor's project (p1100). Answer the
+questions from what you see, and follow the jobs on the screen.

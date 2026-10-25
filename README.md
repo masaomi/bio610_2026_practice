@@ -1,8 +1,8 @@
 ## Bio610, SUSHI and Omics-Studio Hands-on practice
 
-> **DRAFT (2026-10-22).** The timetable inside the afternoon, the server addresses and the project list
-> are not final. Exercises 6 and 7 have not been tested yet: Omics-Studio and OMAKASE are
-> being deployed for the course this week. Values written as `<...>` will be filled in then.
+> **DRAFT (2026-10-25).** Exercises 1-5 now use the course Omics-Studio (same data and steps as the SUSHI
+> course). Its address opens from outside FGCZ once the proxy entry is in place. Exercise 6 (OMAKASE) has not
+> been tested yet. The timetable inside the afternoon may still change.
 
 ## 28 October 2026 (Wed), 14.00-17.00
 
@@ -36,7 +36,7 @@ The same plan as on slide 2 of the lecture.
 14.45-15.45 | **Hands-on: RNA-seq** (Exercises 1-4; Exercise 5 at home)
 15.45-16.00 | break
 16.00-16.20 | **Lecture: Part 3**, OMAKASE and AI agents [Slides 13-18](https://masaomi.github.io/bio610_2025/#m13)
-16.20-16.50 | **Hands-on: OMAKASE** (Exercises 6-7)
+16.20-16.50 | **Hands-on: OMAKASE** (Exercise 6)
 16.50-17.00 | **Wrap-up**
 
 The times may still change.
@@ -45,43 +45,37 @@ The times may still change.
 
 **Server** | **Address** | **Used in**
 -----------|-------------|------------
-SUSHI (course server, legacy) | https://fgcz-course1.bfabric.org/ | Exercises 1-5
-Omics-Studio (the next SUSHI) | `<OMICS_STUDIO_URL>` | Exercises 6-7
-OMAKASE panel | `<OMAKASE_PANEL_URL>` | Exercise 7
+Omics-Studio (course copy, no sign-in) | https://fgcz-course2.bfabric.org | Exercises 1-4, 6
+OMAKASE panel | **OMAKASE** in the header of the course Omics-Studio | Exercise 6
+Result files (served by the legacy course SUSHI) | https://fgcz-course1.bfabric.org | file links in Exercises 1-4
 
 ## Hands-on projects
 
-Placeholder rows (2026-10-22): names, project IDs and groups will be filled in when the
+Each participant works in a project of their own in the course Omics-Studio. Names will be filled in when the
 participant list is final.
 
-**Participant** | ProjectID (legacy SUSHI) | Group (Exercise 7)
-----------|-----------|-----------
-Participant 01 | p1001 | A
-Participant 02 | p1002 | A
-Participant 03 | p1003 | A
-Participant 04 | p1004 | A
-Participant 05 | p1005 | A
-Participant 06 | p1006 | A
-Participant 07 | p1007 | A
-Participant 08 | p1008 | B
-Participant 09 | p1009 | B
-Participant 10 | p1010 | B
-Participant 11 | p1011 | B
-Participant 12 | p1012 | B
-Participant 13 | p1013 | B
-Participant 14 | p1014 | B
-Participant 15 | p1015 | C
-Participant 16 | p1016 | C
-Participant 17 | p1017 | C
-Participant 18 | p1018 | C
-Participant 19 | p1019 | C
-Participant 20 | p1020 | C
-Participant 21 | p1021 | D
-Participant 22 | p1022 | D
-Participant 23 | p1023 | D
-Participant 24 | p1024 | D
-Participant 25 | p1025 | D
-Participant 26 | p1026 | D
+**Participant** | **Project**
+----------|-----------
+Participant 01 | p1101
+Participant 02 | p1102
+Participant 03 | p1103
+Participant 04 | p1104
+Participant 05 | p1105
+Participant 06 | p1106
+Participant 07 | p1107
+Participant 08 | p1108
+Participant 09 | p1109
+Participant 10 | p1110
+Participant 11 | p1111
+Participant 12 | p1112
+Participant 13 | p1113
+Participant 14 | p1114
+Participant 15 | p1115
+Participant 16 | p1116
+Participant 17 | p1117
+Participant 18 | p1118
+Participant 19 | p1119
+Participant 20 | p1120
 
 ## Lecture slides
 
@@ -95,17 +89,16 @@ Participant 26 | p1026 | D
 
 ## Hands-on practices
 
-Part 1. Bulk RNAseq analysis with SUSHI (same as 2025)
+Part 1. Bulk RNAseq analysis in Omics-Studio (same data and steps as the SUSHI course)
 1. [Exercise1 ReadQC](exercise_RNAseq/Exercise_1.md)
 2. [Exercise2 Read Mapping and IGV](exercise_RNAseq/Exercise_2.md)
 3. [Exercise3 Feature Counts](exercise_RNAseq/Exercise_3.md)
 4. [Exercise4 Differential Expression](exercise_RNAseq/Exercise_4.md)
 5. [Exercise5 Interactive Application](exercise_RNAseq/Exercise_5.md)
 
-Part 2. The next generation: Omics-Studio and OMAKASE (new in 2026)
+Part 2. OMAKASE: the same chain from a recipe (new in 2026)
 
-6. [Exercise6 A tour of Omics-Studio](exercise_omics_studio/Exercise_6.md)
-7. [Exercise7 OMAKASE: propose, approve, run](exercise_omics_studio/Exercise_7.md)
+6. [Exercise6 OMAKASE: propose, approve, run](exercise_omics_studio/Exercise_6.md)
 
 Feedback form
 * Comming soon...

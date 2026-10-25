@@ -1,12 +1,16 @@
 # Bulk RNA Sequencing Course - Live Report
 
-Once the differential expression (DE) test job has completed running on SUSHI, both the static and live reports will be available to view. The underlying data in these reports are identical, the only difference being that the static report is a single HTML file that cannot be edited, while the live report allows for the generation and customisation of a range of figures.
+Once the differential expression (DE) test job has completed running in Omics-Studio, both the static and live reports will be available to view. The underlying data in these reports are identical, the only difference being that the static report is a single HTML file that cannot be edited, while the live report allows for the generation and customisation of a range of figures.
 
 The live report is an application built in R Shiny, and allows for interactivity with the data. While the results of the DE test are specific to any given link, some of the figures are not specific to the DE results and reflect the feature expression from the wider dataset (*i.e.*, including samples from the dataset that were not part of the DE test.) This can be useful in enabling the user to view expression of DE features across the wider dataset. For example, the PCA plot is nothing to do with the DE test and is present merely for convenience. Others figures, like the heatmaps and boxplots, allow users to generate figures based on any feature, but are initially based on the top DE features. Volcano plots and pathway plots are specific to that test and exclude any other samples.
 
 The app is intended to aid users in exploring their DE results and generate bespoke and (hopefully, at least close to) publication-ready figures. Users can search for specific features and pathways, and easily plot them. Most of the plots have buttons to download data for import into other programs like GraphPad Prism for alternative figure making.
 
 * [Interactive report Link](https://fgcz-shiny.uzh.ch/exploreDE/?data=p6000/DESeq2_diff--over--undiff_2024-03-20--16-06-16/diff--over--undiff) for this exercise
+
+You can also open the live report of **your own** edgeR result: open the `EdgeR_diff--over--undiff` dataset in
+Omics-Studio and click **Live Report**. Both links open FGCZ Shiny Apps, which asks you to sign in.
+(DRAFT: whether course participants can sign in is being checked.)
 
 ## 1. Initial Overview of DE Features
 
