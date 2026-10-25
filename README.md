@@ -84,6 +84,8 @@ Participant 20 | p1120
   you are on, with the course code given in the lecture, until 29 October 2026)
   * Copy without the question box: [omics_studio_lecture_2026.html](lecture_notes/omics_studio_lecture_2026.html)
     (download the file and open it in a web browser)
+* Hands-on, screen by screen (Exercises 1-5 in the course Omics-Studio): **https://masaomi.github.io/bio610_2025/handson.html**
+  (the same **?** question box as the lecture slides)
 * SUSHI and RNAseq (2025 version): [SUSHI_lecture_1_RNAseq_20251125.pdf](lecture_notes/SUSHI_lecture_1_RNAseq_20251125.pdf)
 * Earlier draft of the 2026 slides (22 October): [omics_studio_omakase_2026.html](lecture_notes/omics_studio_omakase_2026.html)
 
