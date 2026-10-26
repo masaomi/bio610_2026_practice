@@ -1,8 +1,8 @@
 ## Bio610, SUSHI and Omics-Studio Hands-on practice
 
-> **DRAFT (2026-10-25).** Exercises 1-5 now use the course Omics-Studio (same data and steps as the SUSHI
-> course). Its address opens from outside FGCZ once the proxy entry is in place. Exercise 6 (OMAKASE) has not
-> been tested yet. The timetable inside the afternoon may still change.
+> **Course Omics-Studio and OMAKASE: https://fgcz-course2.bfabric.org** (no sign-in; OMAKASE is the link in its
+> header). Exercises 1-5 follow the same data and steps as the SUSHI course; Exercise 6 runs them again from a recipe.
+> The timetable inside the afternoon may still change.
 
 ## 28 October 2026 (Wed), 14.00-17.00
 

@@ -1,6 +1,6 @@
 # Exercise 6 - OMAKASE: propose, approve, run
 - Author: FGCZ
-- Date: 28/10/2026 (DRAFT: the automatic recipe choice is being added; the recipe list in step 3 may still change)
+- Date: 28/10/2026
 
 In Exercises 1-4 you started each app by hand, one after another: FastQC, then STAR, then
 featureCounts, then CountQC. **OMAKASE** is a prototype that does this for you. It **proposes**
@@ -12,7 +12,8 @@ OMAKASE = **O**mics **M**etadata **A**utomated **K**nowledge-based **A**nalysis
 
 > **Rules decide, AI assists, humans release.**
 
-The chain it runs in this exercise is Exercises 1-3 in one go:
+With the recipe `auto_recipe`, OMAKASE chooses the chain for your dataset. In the course it is
+Exercises 1-3 in one go:
 
 ```
  FastQC ┐ start together
@@ -20,17 +21,15 @@ The chain it runs in this exercise is Exercises 1-3 in one go:
           (waits for STAR only)  (waits for featureCounts)
 ```
 
-The reference genome is written in the recipe: the same one you chose in Exercise 2
-(GRCh38.p13, GENCODE Release 37).
+The recipe also fixes the settings: STAR uses the same reference genome you chose in Exercise 2
+(GRCh38.p13, GENCODE Release 37), single-end reads, strandMode antisense.
 
-Work in **your own project** (the same one as in Exercises 1-4). Each dataset can be proposed
-**only once** per recipe: that stops the same analysis being started twice by mistake. So
-everyone makes one proposal, in their own project.
+Work in **your own project** (the same one as in Exercises 1-4).
 
 Steps
 1. [Open OMAKASE](#1-open-omakase)
-2. [Choose your project and dataset](#2-choose-your-project-and-dataset)
-3. [Propose](#3-propose)
+2. [Type your name](#2-type-your-name)
+3. [Choose your project and dataset, then Propose](#3-choose-your-project-and-dataset-then-propose)
 4. [Read the proposal](#4-read-the-proposal)
 5. [Approve](#5-approve)
 6. [Run the chain](#6-run-the-chain)
@@ -41,24 +40,26 @@ Steps
 
 ### 1. Open OMAKASE
 
-In the course Omics-Studio, click **OMAKASE** in the header. The panel opens in a new tab.
-No sign-in, as in Omics-Studio.
+In the course Omics-Studio (https://fgcz-course2.bfabric.org), click **OMAKASE** in the header.
+The panel opens in a new tab. No sign-in, as in Omics-Studio.
 
-### 2. Choose your project and dataset
+<img src="screenshots/om01_open.png" width="70%">
 
-Under **Start from a course dataset**, choose your project (p1101, p1102, ...). Then choose the
-dataset `NextSeq500_20190507_NS278_o5638_subSampled`.
+### 2. Type your name
 
-### 3. Propose
+Type your name in the box at the top of the panel (**your name (required to approve)**).
+It is needed to approve, to run and to reset, and it is recorded as the person who released the chain.
 
-In the recipe list, keep `auto_recipe`: OMAKASE chooses the recipe for this dataset. Press
-**Propose**.
+### 3. Choose your project and dataset, then Propose
+
+Under **Start from a course dataset**, choose your project (p1101, p1102, ...) and the dataset
+`NextSeq500_20190507_NS278_o5638_subSampled`. Keep the recipe **auto_recipe** (the first entry).
+Press **Propose**.
+
+<img src="screenshots/om02_propose.png" width="70%">
 
 **Propose** makes a proposal only. Nothing runs until someone types their name, presses
-**Approve**, then **Run**.
-
-If the panel says the proposal `already exists`, someone has already proposed this dataset:
-check that you chose your own project.
+**Approve**, then **Run chain**.
 
 ### 4. Read the proposal
 
@@ -71,16 +72,21 @@ number). Note it. Read:
 
 Nothing has been submitted to the cluster yet.
 
+<img src="screenshots/om03_proposal.png" width="70%">
+
 ### 5. Approve
 
-Is this proposal right for this dataset? If yes, type **your name** in the name box and press
-**Approve**. The name is recorded as the person who released the chain.
+Is this proposal right for this dataset? If yes, press **Approve** (or **Reject** if not). The name you
+typed in step 2 is recorded as the approver.
 
 ### 6. Run the chain
 
-Press **Run**. The chain takes about 9 minutes when the cluster is free (in a test run: FastQC
-5.5 min and STAR 3.5 min side by side, then featureCounts 1.5 min, then CountQC 2 min). It
-takes longer when the whole class runs at once.
+Press **Run chain** (not **Dry run**, which submits nothing). The chain takes about 8 minutes when the cluster is free (test run on 26 October:
+FastQC 6 min and STAR 3 min side by side, then featureCounts 2 min, then CountQC 3 min). It
+takes longer when the whole class runs at once. The proposal shows each step's state: PENDING,
+RUNNING, COMPLETED, with the new dataset and job numbers.
+
+<img src="screenshots/om04_running.png" width="70%">
 
 ### 7. Watch it in Omics-Studio
 
@@ -88,8 +94,20 @@ While it runs, open the **Jobs** page of your project in Omics-Studio. Watch whi
 first and which one waits.
 
 When the panel shows the chain as done, open **DataSets**. There is one new dataset per step,
-named `omakase_c<candidate>_s<step>_<App>`, for example `omakase_c3_s3_FeatureCountsApp`. They
+named `omakase_c<candidate>_s<step>_<App>`, for example `omakase_c10_s3_FeatureCountsApp`. They
 sit in the same tree as your results from Exercises 1-3: compare them.
+
+<img src="screenshots/om05_datasets.png" width="70%">
+
+**Run it again?** A dataset can be proposed once per recipe. **Reset this project** (with your name
+typed) lets you propose it again. Press it only for your own project.
+
+### The course assistant
+
+During the course session (28 October, 14.00-17.00) the right-hand column of the panel has a
+**course assistant**: ask it about OMAKASE, your jobs, what the course apps do, or how to use
+Omics-Studio. It only reads: it cannot propose, approve, run or reset anything, and nothing you type
+is recorded. For the questions below it gives hints, not answers.
 
 ### 8. Questions
 
