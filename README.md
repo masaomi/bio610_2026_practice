@@ -2,9 +2,9 @@
 
 > **Course Omics-Studio and OMAKASE: https://fgcz-course2.bfabric.org** (no sign-in; OMAKASE is the link in its
 > header). Exercises 1-5 follow the same data and steps as the SUSHI course; Exercise 6 runs them again from a recipe.
-> The timetable inside the afternoon may still change.
+> The timetable may still change.
 
-## 28 October 2026 (Wed), 14.00-17.00
+## 28 October 2026 (Wed), 11.00-12.00 and 13.00-14.00
 
 Masaomi Hatakeyama
 
@@ -29,15 +29,17 @@ Or you can click the download button <img src="images/download_button.png" width
 
 The same plan as on slide 2 of the lecture.
 
+**Morning** | &nbsp;
+-------|-------
+11.00-11.30 | **Lecture: Parts 1-2**, RNA-seq and Omics-Studio [Slides 1-12](https://masaomi.github.io/bio610_2025/#m1)
+11.30-11.45 | **Lecture: Part 3**, OMAKASE and AI agents [Slides 13-18](https://masaomi.github.io/bio610_2025/#m13)
+11.45-12.00 | **Demo**: Omics-Studio and OMAKASE
+
 **Afternoon** | &nbsp;
 -------|-------
-14.00-14.35 | **Lecture: Parts 1-2**, RNA-seq and Omics-Studio [Slides 1-12](https://masaomi.github.io/bio610_2025/#m1)
-14.35-14.45 | break
-14.45-15.45 | **Hands-on: RNA-seq** (Exercises 1-4; Exercise 5 at home)
-15.45-16.00 | break
-16.00-16.20 | **Lecture: Part 3**, OMAKASE and AI agents [Slides 13-18](https://masaomi.github.io/bio610_2025/#m13)
-16.20-16.50 | **Hands-on: OMAKASE** (Exercise 6)
-16.50-17.00 | **Wrap-up**
+13.00-13.35 | **Hands-on: RNA-seq** (Exercises 1-4; Exercise 5 at home)
+13.35-13.50 | **Hands-on: OMAKASE** (Exercise 6)
+13.50-14.00 | **Wrap-up**
 
 The times may still change.
 
