@@ -37,8 +37,8 @@ The same plan as on slide 2 of the lecture.
 
 **Afternoon** | &nbsp;
 -------|-------
-13.00-13.35 | **Hands-on: RNA-seq** (Exercises 1-4; Exercise 5 at home)
-13.35-13.50 | **Hands-on: OMAKASE** (Exercise 6)
+13.00-13.35 | **Hands-on: RNA-seq** (Exercises 1-4; Exercise 5 at home) [Slides 1-32](https://masaomi.github.io/bio610_2026/handson.html#h1)
+13.35-13.50 | **Hands-on: OMAKASE** (Exercise 6) [Slides 33-41](https://masaomi.github.io/bio610_2026/handson.html#h33)
 13.50-14.00 | **Wrap-up**
 
 The times may still change.
@@ -87,8 +87,6 @@ Participant 20 | p1120
     (download the file and open it in a web browser)
 * Hands-on, screen by screen (Exercises 1-5 in the course Omics-Studio): **https://masaomi.github.io/bio610_2026/handson.html**
   (the same **?** question box as the lecture slides)
-* SUSHI and RNAseq (2025 version): [SUSHI_lecture_1_RNAseq_20251125.pdf](lecture_notes/SUSHI_lecture_1_RNAseq_20251125.pdf)
-* Earlier draft of the 2026 slides (22 October): [omics_studio_omakase_2026.html](lecture_notes/omics_studio_omakase_2026.html)
 
 ## Hands-on practices
 
