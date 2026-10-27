@@ -89,6 +89,7 @@ Participant 20 | p1120
 * Hands-on, screen by screen (Exercises 1-6 in the course Omics-Studio): **https://masaomi.github.io/bio610_2026/handson.html**
   (the same **?** question box as the lecture slides)
   * PDF for download (41 pages, 10 MB): [handson_2026.pdf](https://github.com/masaomi/bio610_2026/blob/main/lecture_notes/handson_2026.pdf)
+* Answers to the hands-on questions (Exercises 1-4), with figures: **https://masaomi.github.io/bio610_2026/handson_answers.html**
 
 ## Hands-on practices
 
