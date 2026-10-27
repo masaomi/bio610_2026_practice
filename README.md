@@ -8,7 +8,7 @@
 
 Masaomi Hatakeyama
 
-**Slides: https://masaomi.github.io/bio610_2025/** (open in a web browser; → next slide, ↑ find a slide by a word,
+**Slides: https://masaomi.github.io/bio610_2026/** (open in a web browser; → next slide, ↑ find a slide by a word,
 **?** at the bottom left to ask an AI about the slide you are on, with the course code given in the lecture)
 
 ## How to download/update this documents
@@ -31,8 +31,8 @@ The same plan as on slide 2 of the lecture.
 
 **Morning** | &nbsp;
 -------|-------
-11.00-11.30 | **Lecture: Parts 1-2**, RNA-seq and Omics-Studio [Slides 1-12](https://masaomi.github.io/bio610_2025/#m1)
-11.30-11.45 | **Lecture: Part 3**, OMAKASE and AI agents [Slides 13-18](https://masaomi.github.io/bio610_2025/#m13)
+11.00-11.30 | **Lecture: Parts 1-2**, RNA-seq and Omics-Studio [Slides 1-12](https://masaomi.github.io/bio610_2026/#m1)
+11.30-11.45 | **Lecture: Part 3**, OMAKASE and AI agents [Slides 13-18](https://masaomi.github.io/bio610_2026/#m13)
 11.45-12.00 | **Demo**: Omics-Studio and OMAKASE
 
 **Afternoon** | &nbsp;
@@ -49,7 +49,6 @@ The times may still change.
 -----------|-------------|------------
 Omics-Studio (course copy, no sign-in) | https://fgcz-course2.bfabric.org | Exercises 1-4, 6
 OMAKASE panel | **OMAKASE** in the header of the course Omics-Studio | Exercise 6
-Result files (served by the legacy course SUSHI) | https://fgcz-course1.bfabric.org | file links in Exercises 1-4
 
 ## Hands-on projects
 
@@ -81,12 +80,12 @@ Participant 20 | p1120
 
 ## Lecture slides
 
-* RNA-seq with Omics-Studio and OMAKASE (2026): **https://masaomi.github.io/bio610_2025/**
+* RNA-seq with Omics-Studio and OMAKASE (2026): **https://masaomi.github.io/bio610_2026/**
   (→ next slide, ↑ find a slide by a word; **?** at the bottom left asks an AI, Claude Haiku 5.5, about the slide
   you are on, with the course code given in the lecture, until 29 October 2026)
   * Copy without the question box: [omics_studio_lecture_2026.html](lecture_notes/omics_studio_lecture_2026.html)
     (download the file and open it in a web browser)
-* Hands-on, screen by screen (Exercises 1-5 in the course Omics-Studio): **https://masaomi.github.io/bio610_2025/handson.html**
+* Hands-on, screen by screen (Exercises 1-5 in the course Omics-Studio): **https://masaomi.github.io/bio610_2026/handson.html**
   (the same **?** question box as the lecture slides)
 * SUSHI and RNAseq (2025 version): [SUSHI_lecture_1_RNAseq_20251125.pdf](lecture_notes/SUSHI_lecture_1_RNAseq_20251125.pdf)
 * Earlier draft of the 2026 slides (22 October): [omics_studio_omakase_2026.html](lecture_notes/omics_studio_omakase_2026.html)

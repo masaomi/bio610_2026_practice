@@ -62,25 +62,6 @@ Do not use the link in the `IGV` column: it opens a page that asks for an FGCZ s
 
 <img src="screenshots/omics_studio/os14_star_files.png" width="70%">
 
-#### **BUT!**
-
-Your BAM files come from only 100 000 reads a sample, so a single gene has few reads on it. It is probably best
-to load full BAM files, to see how a real big dataset might look. Use the links below instead!
-(They come from all reads of the same samples, mapped to a newer GENCODE release; viewed on hg38 in IGV this
-makes no difference.)
-
-S1_undiff:
-
-* https://fgcz-course1.bfabric.org/projects/p6000/STAR_2026-09-29--15-58-50/S1_undiff.bam
-
-* https://fgcz-course1.bfabric.org/projects/p6000/STAR_2026-09-29--15-58-50/S1_undiff.bam.bai
-
-S4_diff
-
-* https://fgcz-course1.bfabric.org/projects/p6000/STAR_2026-09-29--15-58-50/S4_diff.bam
-
-* https://fgcz-course1.bfabric.org/projects/p6000/STAR_2026-09-29--15-58-50/S4_diff.bam.bai
-
 <img src="screenshots/screenshot15.png" width="70%">
 
 <img src="screenshots/screenshot16.png" width="70%">
