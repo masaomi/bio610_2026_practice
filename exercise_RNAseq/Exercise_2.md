@@ -62,6 +62,19 @@ Do not use the link in the `IGV` column: it opens a page that asks for an FGCZ s
 
 <img src="screenshots/omics_studio/os14_star_files.png" width="70%">
 
+#### Full data for FST
+
+Your BAM files come from only 100 000 reads a sample, so FST has only a few reads on it. To see how the full
+data look, load these instead. They hold every read of `S1_undiff` and `S4_diff` in the FST region
+(chr5:53,470,000-53,500,000), taken from the full data of the same samples. (Those were mapped to a newer
+GENCODE release, 48; viewed on hg38 in IGV this makes no difference.)
+
+* S1_undiff (735 KB): [BAM](https://github.com/masaomi/bio610_2026_practice/raw/main/data/igv_full_FST/S1_undiff_full_FST.bam) and its [index](https://github.com/masaomi/bio610_2026_practice/raw/main/data/igv_full_FST/S1_undiff_full_FST.bam.bai)
+* S4_diff (32 KB): [BAM](https://github.com/masaomi/bio610_2026_practice/raw/main/data/igv_full_FST/S4_diff_full_FST.bam) and its [index](https://github.com/masaomi/bio610_2026_practice/raw/main/data/igv_full_FST/S4_diff_full_FST.bam.bai)
+
+In IGV, **File → Load from URL** and paste the BAM link and the index link, as above. Or download both files
+of a sample into one folder and use **File → Load from File**. Then type *FST* in the box left of "Go".
+
 <img src="screenshots/screenshot15.png" width="70%">
 
 <img src="screenshots/screenshot16.png" width="70%">
