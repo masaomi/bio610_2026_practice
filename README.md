@@ -1,4 +1,4 @@
-## Bio610, SUSHI and Omics-Studio Hands-on practice
+## Bio610, Omics-Studio Hands-on practice
 
 > **Course Omics-Studio and OMAKASE: https://fgcz-course2.bfabric.org** (no sign-in; OMAKASE is the link in its
 > header). Exercises 1-5 follow the same data and steps as the SUSHI course; Exercise 6 runs them again from a recipe.
@@ -15,7 +15,7 @@ Masaomi Hatakeyama
 
 Download
 ```bash
-$ git clone https://github.com/masaomi/bio610_2026_sushi_practice
+$ git clone https://github.com/masaomi/bio610_2026_practice
 ```
 
 Updating
