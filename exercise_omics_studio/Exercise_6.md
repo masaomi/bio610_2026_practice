@@ -104,7 +104,7 @@ typed) lets you propose it again. Press it only for your own project.
 
 ### The course assistant
 
-During the course session (28 October, 13.00-15.00) the right-hand column of the panel has a
+During the course session (28 October, 13.00-17.00) the right-hand column of the panel has a
 **course assistant**: ask it about OMAKASE, your jobs, what the course apps do, or how to use
 Omics-Studio. It only reads: it cannot propose, approve, run or reset anything, and nothing you type
 is recorded. For the questions below it gives hints, not answers.
