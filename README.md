@@ -85,10 +85,10 @@ Participant 20 | p1120
   you are on, with the course code given in the lecture, until 29 October 2026)
   * Copy without the question box: [omics_studio_lecture_2026.html](lecture_notes/omics_studio_lecture_2026.html)
     (download the file and open it in a web browser)
-  * PDF for download (54 pages, 3 MB): [omics_studio_lecture_2026.pdf](lecture_notes/omics_studio_lecture_2026.pdf)
+  * PDF for download (54 pages, 3 MB): [omics_studio_lecture_2026.pdf](https://github.com/masaomi/bio610_2026/blob/main/lecture_notes/omics_studio_lecture_2026.pdf)
 * Hands-on, screen by screen (Exercises 1-6 in the course Omics-Studio): **https://masaomi.github.io/bio610_2026/handson.html**
   (the same **?** question box as the lecture slides)
-  * PDF for download (41 pages, 10 MB): [handson_2026.pdf](lecture_notes/handson_2026.pdf)
+  * PDF for download (41 pages, 10 MB): [handson_2026.pdf](https://github.com/masaomi/bio610_2026/blob/main/lecture_notes/handson_2026.pdf)
 
 ## Hands-on practices
 
