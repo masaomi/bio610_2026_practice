@@ -6,11 +6,10 @@ The live report is an application built in R Shiny, and allows for interactivity
 
 The app is intended to aid users in exploring their DE results and generate bespoke and (hopefully, at least close to) publication-ready figures. Users can search for specific features and pathways, and easily plot them. Most of the plots have buttons to download data for import into other programs like GraphPad Prism for alternative figure making.
 
-* [Interactive report Link](https://fgcz-shiny.uzh.ch/exploreDE/?data=p6000/DESeq2_diff--over--undiff_2024-03-20--16-06-16/diff--over--undiff) for this exercise
+* [Interactive report Link](https://shiny-public.fgcz.uzh.ch/app/exploreDE/?data=p6000/DESeq2_diff--over--undiff_2026-09-29--17-11-07/diff--over--undiff) for this exercise
 
 You can also open the live report of **your own** edgeR result: open the `EdgeR_diff--over--undiff` dataset in
-Omics-Studio and click **Live Report**. Both links open FGCZ Shiny Apps, which asks you to sign in.
-(DRAFT: whether course participants can sign in is being checked.)
+Omics-Studio and click **Live Report**. Both links open the public FGCZ Shiny server; no sign-in is needed.
 
 ## 1. Initial Overview of DE Features
 
